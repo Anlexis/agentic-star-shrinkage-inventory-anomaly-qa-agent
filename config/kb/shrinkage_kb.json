@@ -1,0 +1,82 @@
+[
+  {
+    "id": "kb-001",
+    "title": "Common shrinkage anomaly patterns at store level",
+    "category": "anomaly_patterns",
+    "source": "Loss Prevention Playbook, anomaly pattern catalog",
+    "tags": ["shrinkage", "anomaly", "patterns", "store", "detection"],
+    "content": "Recurring shrinkage anomaly signals include spikes in voided transactions clustered on a single register or shift, repeated small-quantity manual inventory adjustments on the same SKU, mismatches between receiving counts and point-of-sale sell-through for a SKU over a rolling week, unusually high return-without-receipt volume, and a rise in register no-sale (drawer-open) events outside of change-making activity. Anomalies are flagged when any single signal exceeds its store-tier baseline by more than two standard deviations, or when two or more signals co-occur for the same SKU, register, or shift."
+  },
+  {
+    "id": "kb-002",
+    "title": "Initiating a shrinkage investigation",
+    "category": "investigation_procedures",
+    "source": "Loss Prevention SOP, investigation initiation",
+    "tags": ["investigation", "procedure", "shrinkage", "escalation"],
+    "content": "When an anomaly is confirmed against the latest cycle count, the loss-prevention coordinator opens a case file, pulls the POS exception report and the CCTV footage window covering the anomalous transactions, and identifies every associate scheduled on the affected register or department during that window. Associates are interviewed individually and consistently, all evidence (footage clips, exception report excerpts, count sheets) is logged with a chain-of-custody record, and the case is escalated to the regional LP lead whenever the estimated loss exceeds the store's escalation threshold or a repeat pattern is found across more than one shift."
+  },
+  {
+    "id": "kb-003",
+    "title": "Prevention playbook for high-shrink categories",
+    "category": "prevention_playbooks",
+    "source": "Loss Prevention Playbook, category hardening guide",
+    "tags": ["prevention", "playbook", "high-shrink", "eas", "planogram"],
+    "content": "Categories with a shrink rate above the chain-wide benchmark receive source-tagging or electronic article surveillance (EAS) tags at the DC before store delivery, are relocated within sightline of staffed areas rather than blind aisles, and are spot-checked on an unscheduled basis at least weekly. Store teams also run short employee-awareness refreshers on the specific high-shrink SKUs each quarter and review planogram facing counts against on-hand counts monthly to catch slow-building shrinkage before it accumulates into a large variance."
+  },
+  {
+    "id": "kb-004",
+    "title": "Inventory reconciliation cadence and variance thresholds",
+    "category": "inventory_reconciliation",
+    "source": "Inventory Control Manual, reconciliation standards",
+    "tags": ["inventory", "reconciliation", "variance", "threshold", "cadence"],
+    "content": "Full-store reconciliation against the perpetual inventory ledger runs monthly for A-tier (high-velocity, high-value) SKUs, quarterly for B-tier, and semi-annually for C-tier. A variance is escalated to the store manager when it exceeds 2% of unit count or a fixed dollar threshold set per category, whichever is lower; a variance exceeding 5% or recurring for the same SKU across two consecutive cycles automatically opens a shrinkage investigation case rather than a routine adjustment."
+  },
+  {
+    "id": "kb-005",
+    "title": "Recognizing internal theft indicators",
+    "category": "employee_theft",
+    "source": "Loss Prevention SOP, internal theft indicators",
+    "tags": ["employee", "theft", "sweethearting", "void", "refund", "indicators"],
+    "content": "Common internal-theft indicators include \"sweethearting\" (scanning items at a discount or not scanning them at all for a known customer), a disproportionate share of voids or refunds processed under one employee ID relative to peers on the same shift, missing or duplicated receipts correlated with a specific cashier, and discount-code usage that clusters around one employee outside of promotional periods. Any single indicator triggers a review of that employee's transaction log for the trailing 30 days before a formal investigation is opened."
+  },
+  {
+    "id": "kb-006",
+    "title": "Receiving discrepancy resolution procedure",
+    "category": "receiving_discrepancies",
+    "source": "Receiving & Vendor Compliance Manual, discrepancy resolution",
+    "tags": ["receiving", "discrepancy", "purchase order", "vendor", "shortage"],
+    "content": "When received quantity does not match the purchase order, the receiving associate counts and photographs the shipment before signing, logs the discrepancy in the receiving exception system within 24 hours, and files a vendor short-ship claim with the PO number, carrier seal number, and photo evidence attached. Vendors have 10 business days to respond to a claim; unresolved claims are escalated to the vendor compliance team, and repeat short-ships from the same vendor within a quarter trigger a vendor performance review."
+  },
+  {
+    "id": "kb-007",
+    "title": "POS exception report review checklist",
+    "category": "pos_exceptions",
+    "source": "Loss Prevention SOP, daily POS exception review",
+    "tags": ["pos", "exception report", "void", "no-sale", "price override", "checklist"],
+    "content": "The daily POS exception review covers five items: voided transactions (count and dollar total per register), no-sale (drawer-open) events outside of documented change-making, manual price overrides and their justification codes, discount and coupon usage outside promotional windows, and cash-drawer count variances against the recorded drops. Any register exceeding its rolling 30-day baseline on two or more of these items in a single shift is flagged for supervisor review before the next shift begins."
+  },
+  {
+    "id": "kb-008",
+    "title": "Cycle count scheduling and recount triggers",
+    "category": "cycle_counts",
+    "source": "Inventory Control Manual, cycle count procedure",
+    "tags": ["cycle count", "abc classification", "blind count", "recount"],
+    "content": "Cycle counts follow ABC classification: A-tier SKUs are counted every 30 days, B-tier every 90 days, and C-tier every 180 days, using a blind-count sheet (no system quantity shown) to avoid count bias. A count that varies from the system quantity by more than the category's variance threshold triggers an immediate independent recount by a second associate before the adjustment posts; a variance that survives the recount is routed into the standard inventory-reconciliation escalation path."
+  },
+  {
+    "id": "kb-009",
+    "title": "Vendor fraud and short-shipment detection",
+    "category": "vendor_fraud",
+    "source": "Receiving & Vendor Compliance Manual, fraud detection",
+    "tags": ["vendor", "fraud", "short-shipment", "bulk", "weight verification"],
+    "content": "Repeated shortages from the same vendor across multiple stores, shipments with tampered or missing carrier seals, and case counts that are correct while unit counts inside cases are short are the primary vendor-fraud signals. Bulk and case-pack goods are weight-verified against the vendor's declared case weight at receiving; a pattern of shortages from one vendor across three or more stores in a quarter is escalated to the vendor compliance team for a formal audit and, if confirmed, a claims recovery process."
+  },
+  {
+    "id": "kb-010",
+    "title": "Loss prevention program governance and reporting cadence",
+    "category": "loss_prevention_program",
+    "source": "Loss Prevention Playbook, program governance",
+    "tags": ["governance", "reporting", "kpi", "shrink review", "roles"],
+    "content": "Each store's LP coordinator reviews open cases and shrink KPIs (shrink percentage, cycle-count accuracy, case closure rate, average days-to-close) weekly, and the regional LP lead runs a monthly shrink review meeting across all stores in the region to compare trends and reallocate prevention resources to the highest-risk locations. Investigation case files, footage exports, and count sheets referenced in a case are retained for three years to support recurring-offender pattern analysis and any subsequent legal action."
+  }
+]
